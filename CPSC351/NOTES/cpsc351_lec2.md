@@ -101,5 +101,5 @@
 -   The child process can either:
     -   Be a duplicate of the parent process (same data, etc).
     -   May be running a new program.
-  - 
-  - 
+-
+-
