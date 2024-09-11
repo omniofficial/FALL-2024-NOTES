@@ -20,16 +20,16 @@ string varValues(string &expression, unordered_map<char, int> &values)
     if (isalpha(ch))
     {
       auto it = values.find(ch);
-      if (it != values.end())
+      if (it != values.end()) // Evaluate only if there are still values within the map
       {
-        numeric_expression += to_string(it->second);
+        numeric_expression += to_string(it->second); // assign int value to second char value (5 = 'a')
       }
       else
       {
         numeric_expression += ch;
       }
     }
-    else
+    else // If all else fails, directly move char contents to numeric_expression string
     {
       numeric_expression += ch;
     }
@@ -55,6 +55,7 @@ int postfixEval(string numeric_expression)
     // CASE: If character is an operand, make sure to use the operand on the first two topmost characters of stack
     else
     {
+      // If operator = true, pop first two char out of stack
       int tempval;
       int char1 = s.top();
       s.pop();
@@ -76,7 +77,7 @@ int postfixEval(string numeric_expression)
         tempval = char2 / char1;
         break;
       }
-      s.push(tempval);
+      s.push(tempval); // push the result of the first two popped char values back into the stack
     }
   }
   return s.top();
