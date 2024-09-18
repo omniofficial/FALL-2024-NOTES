@@ -56,4 +56,3 @@
 -   Good for small information transfers
 -   Easier to implement than shared memory.
 -   **Disadvantage:** Usually required OS intervention on every message transfer.
-
