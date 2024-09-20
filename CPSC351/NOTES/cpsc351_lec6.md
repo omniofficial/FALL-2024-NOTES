@@ -1,4 +1,4 @@
-# LECTURE #5: Threads , 9/17/24
+# LECTURE #6: Threads, 9/17/24
 
 ## What is a Thread?
 
@@ -76,7 +76,14 @@
 
 ### Overview
 
--   Thread library: Provides an API
+-   Thread library: Provides programmer with API for creating and managing threads.
+-   Two primary ways of implementing a thread library:
+    -   In user space; invoking an API function does not result in a system call.
+    -   In kernel space: invoking an API function call results in a system call.
+-   Three dormant libriaries:
+    -   POSIX threads (pthreads)
+    -   Win32
+    -   Java
 
 ### Pthreads
 
