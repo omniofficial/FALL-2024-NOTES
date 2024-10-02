@@ -1,4 +1,4 @@
-# LECTURE #7: Process Synchronization 1, 9/24/24
+# LECTURE #8: Process Synchronization 1, 9/24/24
 
 ## What is Process Synchronization?
 
